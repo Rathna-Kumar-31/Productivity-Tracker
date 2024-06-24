@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Entry Log</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Entry</h1>
+        <form action="/task" method="POST">
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" name="taskName" required><br><br>
+
+            <label for="timeSpent">Time Spent (in minutes):</label>
+            <input type="number" id="timeSpent" name="timeSpent" required><br><br>
+
+            <label for="date">Date:   </label>
+            <input type="date" id="date" name="date"><br><br>
+
+            <button type="submit">Add My Task</button><br><br>
+        </form>
+        <a href="/summary">View Summary</a>
+    </div>
+</body>
+</html>
